@@ -1,0 +1,25 @@
+bricks:
+  change_notifier:
+    path: change_notifier
+  bloc:
+    path: bloc
+  base_project:
+    path: base_project
+  clean_architecture:
+    path: clean_architecture
+  dashbook:
+    path: dashbook
+  getx:
+    path: getx
+  entity:
+    path: entity
+  enum:
+    path: enum
+  freezed:
+    path: freezed
+  repository:
+    path: repository
+  usecase:
+    path: usecase
+
+#  dashbook_gallery: ^0.1.0

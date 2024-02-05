@@ -1,0 +1,54 @@
+name: {{name.snakeCase()}}
+description: "The project for {{name.pascalCase()}}"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_launcher_icons: ^0.13.1
+  get_it: ^7.6.4
+  go_router: ^13.0.1
+
+  ui_core:
+    path: packages/ui_core
+
+  storage_core:
+    path: packages/storage_core
+
+  helper_package:
+    path: packages/helper_package
+  flutter_localization: ^0.2.0
+  flutter_bloc: ^8.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  lint: ^2.3.0 # plugin for Effective Dart (Clean code)
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/dsg.png"
+  windows:
+    generate: true
+    image_path: "assets/images/dsg.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/images/dsg.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/i18n/

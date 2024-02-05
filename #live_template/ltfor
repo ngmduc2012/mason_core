@@ -1,0 +1,65 @@
+
+File > Settings > Editor > Live Templates
+
+ltfor
+
+for (var $VAR$ in $ITERABLE$) {
+  $END$
+}
+
+gap
+
+const Gap($VAR$),
+
+bloc - cubit
+
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:equatable/equatable.dart';
+
+
+final class $VAR$State extends Equatable {
+  const $VAR$State({
+    this.status = SubmissionStatusEnum.initial,
+    this.user,
+  });
+
+  final SubmissionStatusEnum status;
+  final CreateStudentUserRequestEntity? user;
+
+  $VAR$State copyWith({
+    SubmissionStatusEnum? status,
+    CreateStudentUserRequestEntity? user,
+  }) {
+    return $VAR$State(
+      status: status ?? this.status,
+      user: user ?? this.user,
+    );
+  }
+
+  @override
+  List<dynamic> get props => [
+    status, user,
+  ];
+}
+
+
+sealed class $VAR$Event {}
+final class $VAR$ extends $VAR$Event {}
+
+class $VAR$Bloc extends Bloc<$VAR$Event, $VAR$State> {
+  $VAR$Bloc() : super(const $VAR$State()) {
+    on<$VAR$>((event, emit) => on$VAR$(emit));
+  }
+
+  Future<void> on$VAR$(Emitter<void> emit) async {
+    emit(state);
+  }
+}
+
+layout builder
+
+LayoutBuilder(
+    builder: (BuildContext context, BoxConstraints constraints) {
+        return const SizedBox();
+    },
+  )
