@@ -1,0 +1,17 @@
+/*
+ Part of clean architecture:  https://bloclibrary.dev/architecture/#:~:text=%7D-,Repository,-The%20repository%20layer
+
+   Learn more decode Map  | https://codelabs.developers.google.com/codelabs/dart-patterns-records#6
+   Learn more decode List | https://codelabs.developers.google.com/codelabs/dart-patterns-records#7
+
+   STEP 1: Create repository {{name.snakeCase()}}/data/repositories
+   STEP 2: using get_it (Learn more: https://pub.dev/packages/get_it)
+   declare at lib/main/bootstrap.dart
+
+   final get{{name.pascalCase()}} = getIt<{{name.pascalCase()}}Repository>();
+   setup(){
+    getIt.registerLazySingleton<{{name.pascalCase()}}Repository>(
+        () => {{name.pascalCase()}}RepositoryImpl(),
+     );
+   }
+ */

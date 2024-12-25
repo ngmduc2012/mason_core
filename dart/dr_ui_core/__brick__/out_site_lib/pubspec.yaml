@@ -1,0 +1,67 @@
+name: {{name.snakeCase()}}
+description: "The project for {{name.pascalCase()}}"
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  lint: ^2.3.0
+  test: ^1.25.2
+  mockito: ^5.4.4
+  flutter_gen_runner: ^5.6.0
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10+1
+  fluent_ui: ^4.8.7
+  ui_core:
+    path: ../ancestor_cores/ui_core
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+#run: fluttergen -c pubspec.yaml
+flutter_gen:
+  assets:
+    enabled: true
+    outputs:
+      class_name: {{name.pascalCase()}}Assets
+      package_parameter_enabled: true
+  #  fonts:
+  #    enabled: true
+  #    outputs:
+  #      class_name: {{name.pascalCase()}}FontFamily
+  #      package_parameter_enabled: true
+  #  colors:
+  #    enabled: true
+  #    outputs:
+  #      class_name: {{name.pascalCase()}}Color
+  #      package_parameter_enabled: true
+  #    inputs:
+  #      - assets/colors/color.xml
+  output: lib/gen/src/ # Optional (default: lib/gen/)
+  line_length: 80 # Optional (default: 80)
+
+  integrations:
+    flutter_svg: true
+    flare_flutter: true
+    rive: true
+    lottie: true
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  assets:
+    - assets/icons/light/
+    - assets/icons/bold/
+  #  fonts:
+  #    - family: Nanum Square Neo
+  #      fonts:
+  #        - asset: assets/fonts/nanum_square_neo/OTF/NanumSquareNeoOTF-aLt.otf
+  #          style: italic

@@ -1,0 +1,65 @@
+bricks:
+  dr_change_notifier:
+    path: dart/dr_change_notifier
+  dr_bloc:
+    path: dart/dr_bloc
+  dr_base_project:
+    path: dart/dr_base_project
+  dr_clean_arch:
+    path: dart/dr_clean_arch
+  dr_dashbook:
+    path: dart/dr_dashbook
+  dr_base_model:
+    path: dart/dr_base_model
+  dr_getx:
+    path: dart/dr_getx
+  dr_plugin:
+    path: dart/dr_plugin
+  dr_entity:
+    path: dart/dr_entity
+  dr_enum:
+    path: dart/dr_enum
+  dr_freezed:
+    path: dart/dr_freezed
+  dr_repository:
+    path: dart/dr_repository
+  dr_responsive:
+    path: dart/dr_responsive
+  dr_usecase:
+    path: dart/dr_usecase
+  dr_screen:
+    path: dart/dr_screen
+  dr_folder:
+    path: dart/dr_folder
+  dr_class:
+    path: dart/dr_class
+  dr_folder_package:
+    path: dart/dr_folder_package
+  dr_ui_core:
+    path: dart/dr_ui_core
+
+  dr_unit_test:
+    path: dart/dr_unit_test
+  dr_widget_test:
+    path: dart/dr_widget_test
+  dr_bloc_test:
+    path: dart/dr_bloc_test
+  dr_class_test:
+    path: dart/dr_class_test
+
+#    MARKDOWN
+  md_help:
+    path: markdown/md_help
+
+#    HTML
+  h_storage:
+    path: html/h_storage
+
+#    SWIFT
+  sw_struct:
+    path: swift/sw_struct
+  sw_enum:
+    path: swift/sw_enum
+  sw_class:
+    path: swift/sw_class
+#  dashbook_gallery: ^0.1.0

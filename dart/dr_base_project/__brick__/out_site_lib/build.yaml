@@ -1,0 +1,17 @@
+targets:
+  $default:
+    sources:
+      - $package$
+      - lib/$lib$
+      - lib/**.dart
+      - test/**.dart
+      - integration_test/**.dart
+      - packages/flutter_core/test/**.dart
+      - packages/device_core/test/**.dart
+    builders:
+      mockito|mockBuilder:
+        generate_for:
+          - test/**.dart
+          - integration_test/**.dart
+          - packages/flutter_core/test/**.dart
+          - packages/device_core/test/**.dart
